@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@ktym4a/slidev-theme-ktym4a':
+        specifier: ^0.3.2
+        version: 0.3.2(@slidev/types@52.11.1(@nuxt/kit@3.20.2)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2)))
       '@slidev/cli':
         specifier: ^52.11.1
         version: 52.11.1(@babel/parser@7.28.5)(@nuxt/kit@3.20.2)(@types/markdown-it@14.1.2)(@types/node@22.19.3)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(postcss@8.5.6)(tsx@4.21.0)
+      '@slidev/theme-apple-basic':
+        specifier: ^0.25.1
+        version: 0.25.1
       '@slidev/theme-default':
         specifier: latest
         version: 0.25.0
@@ -20,6 +26,12 @@ importers:
       slidev-theme-academic:
         specifier: ^2.1.0
         version: 2.1.0(postcss@8.5.6)(rollup@4.55.1)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
+      slidev-theme-geist:
+        specifier: ^0.8.1
+        version: 0.8.1
+      slidev-theme-neversink:
+        specifier: ^0.4.0
+        version: 0.4.0(@nuxt/kit@3.20.2)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(markdown-it@14.1.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3))
       vue:
         specifier: ^3.5.26
         version: 3.5.26(typescript@5.9.3)
@@ -175,6 +187,9 @@ packages:
 
   '@braintree/sanitize-url@7.1.1':
     resolution: {integrity: sha512-i1L7noDNxtFyL5DmZafWy1wRVhGehQmzZaz1HiN5e7iylJMSZR7ekOV7NsIqa5qBldlLrsKv4HbgFUVlQrz8Mw==}
+
+  '@catppuccin/palette@1.7.1':
+    resolution: {integrity: sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==}
 
   '@chevrotain/cst-dts-gen@11.0.3':
     resolution: {integrity: sha512-BvIKpRLeS/8UbfxXxgC33xOumsacaeCKAjAeLyOn7Pcp95HiRbrpl14S+9vaZLolnbssPIUuiUd8IvgkRyt6NQ==}
@@ -506,11 +521,26 @@ packages:
   '@iconify-json/carbon@1.2.15':
     resolution: {integrity: sha512-9tW0nZY5QtKkMhuYzW09BM1345SyXNuA+gx2ub0j/fnfHOD5XVimMJ/D76H3tTez25NJbPYCLIQoFhvJc1HVBQ==}
 
+  '@iconify-json/logos@1.2.10':
+    resolution: {integrity: sha512-qxaXKJ6fu8jzTMPQdHtNxlfx6tBQ0jXRbHZIYy5Ilh8Lx9US9FsAdzZWUR8MXV8PnWTKGDFO4ZZee9VwerCyMA==}
+
+  '@iconify-json/mdi@1.2.3':
+    resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
+
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
 
   '@iconify-json/svg-spinners@1.2.4':
     resolution: {integrity: sha512-ayn0pogFPwJA1WFZpDnoq9/hjDxN+keeCMyThaX4d3gSJ3y0mdKUxIA/b1YXWGtY9wVtZmxwcvOIeEieG4+JNg==}
+
+  '@iconify-json/twemoji@1.2.5':
+    resolution: {integrity: sha512-uKpuIEV0v6K5BW3Mjdyl+XKFVAbbcPxAgifKvEMtZoUZB5+YiY5zaMm2uNNCxyXzAWU9yNLlj41WU6/mvgALsw==}
+
+  '@iconify-json/uim@1.2.3':
+    resolution: {integrity: sha512-rCOU5nrRbcg5s5ZhL9Esoj/acyPeb6hPetVQYMJ18/wJwYsQtcwrFJXy6XOwyFs9TTLnjFGynLJO/TYihOQtDg==}
+
+  '@iconify/json@2.2.425':
+    resolution: {integrity: sha512-RJcJeoLFAmKPr7e7bP7gw33ASBSONuFsiCg35cEvrf/s8DDG5+C9eSqOvIiggNwZwwjYeGNKIJ7RduJTWgN0IQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -520,6 +550,11 @@ packages:
 
   '@iconify/utils@3.1.0':
     resolution: {integrity: sha512-Zlzem1ZXhI1iHeeERabLNzBHdOa4VhQbqAcOQaMKuTuyZCpwKbC2R4Dd0Zo3g9EAc+Y4fiarO8HIHRAth7+skw==}
+
+  '@iconify/vue@4.3.0':
+    resolution: {integrity: sha512-Xq0h6zMrHBbrW8jXJ9fISi+x8oDQllg5hTDkDuxnWiskJ63rpJu9CvJshj8VniHVTbsxCg9fVoPAaNp3RQI5OQ==}
+    peerDependencies:
+      vue: '>=3'
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -536,6 +571,12 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@ktym4a/slidev-theme-ktym4a@0.3.2':
+    resolution: {integrity: sha512-i8wDTI/OFt5zB4I/MSmeXagvchsUOy3GYhvBYf12pdvPgNLE363UlfFP3VYzcohDb3h8Grqt8LCm+Ix1txw4AQ==}
+    engines: {node: '>=18.0.0', slidev: '>=0.52.0'}
+    peerDependencies:
+      '@slidev/types': '>=0.52.0'
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
@@ -557,6 +598,15 @@ packages:
   '@mdit-vue/types@3.0.2':
     resolution: {integrity: sha512-00aAZ0F0NLik6I6Yba2emGbHLxv+QYrPH00qQ5dFKXlAo1Ll2RHDXwY7nN2WAfrx2pP+WrvSRFTGFCNGdzBDHw==}
     engines: {node: '>=20.0.0'}
+
+  '@mdit/plugin-sub@0.12.0':
+    resolution: {integrity: sha512-27kKkSVkymc+2RNc5XOYkeXip5PgHZPUnHpxUvkpnairLwyHsXb8/gzr9zd5arVkip86rcdy9LIvnF7zO0dNVQ==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      markdown-it: ^14.1.0
+    peerDependenciesMeta:
+      markdown-it:
+        optional: true
 
   '@mermaid-js/parser@0.6.3':
     resolution: {integrity: sha512-lnjOhe7zyHjc+If7yT4zoedx2vo4sHaTmtkl1+or8BRTnCtDmcTpAjpzDSfCZrshM5bCoz0GyidzadJAH1xobA==}
@@ -790,6 +840,10 @@ packages:
   '@slidev/rough-notation@0.1.0':
     resolution: {integrity: sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA==}
 
+  '@slidev/theme-apple-basic@0.25.1':
+    resolution: {integrity: sha512-saA5yYui+jTT13tP+QJKnWeM8sK0IA1iln2E3sWAJsfKdQHUD3fw8+AlUHLUH6yc8NPq3ewtZcwWx49a/iF8Tg==}
+    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
+
   '@slidev/theme-default@0.25.0':
     resolution: {integrity: sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw==}
     engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
@@ -797,6 +851,10 @@ packages:
   '@slidev/theme-seriph@0.25.0':
     resolution: {integrity: sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ==}
     engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
+
+  '@slidev/types@0.28.10':
+    resolution: {integrity: sha512-XcJ12giBaeSHxImlYuDfO1XW686kWDq4uoftnPZyIxhNew4FREsbOLY8oG5Nz5qn05qSsnSDQGo55EbantKvfg==}
+    engines: {node: '>=14.0.0'}
 
   '@slidev/types@0.29.2':
     resolution: {integrity: sha512-8S7WCO1WTjFpjxIZxEgb+tn5XumpCAFcBVT01BI4N7g8rPYpWzMxKym/kSysCfti/VAYjtyX5ztx/HEzwtMiUw==}
@@ -2080,6 +2138,9 @@ packages:
   markdown-it-footnote@4.0.0:
     resolution: {integrity: sha512-WYJ7urf+khJYl3DqofQpYfEYkZKbmXmwxQV8c8mO/hGIhgZ1wOe7R4HLFNwqx7TjILbnC98fuyeSsin19JdFcQ==}
 
+  markdown-it-mark@4.0.0:
+    resolution: {integrity: sha512-YLhzaOsU9THO/cal0lUjfMjrqSMPjjyjChYM7oyj4DnyaXEzA8gnW6cVJeyCrCVeyesrY2PlEdUYJSPFYL4Nkg==}
+
   markdown-it-mdc@0.2.6:
     resolution: {integrity: sha512-HxbEZoEmftdm/krWzwI3JcCWoeXTkAufme1gQt8MTN6nY7y2w/I0LI8U9TEERNPjBNtMOLaNaQsM1H+5K15UJQ==}
     peerDependencies:
@@ -2397,6 +2458,11 @@ packages:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
     engines: {node: '>=6'}
 
+  qrcode.vue@3.6.0:
+    resolution: {integrity: sha512-vQcl2fyHYHMjDO1GguCldJxepq2izQjBkDEEu9NENgfVKP6mv/e2SU62WbqYHGwTgWXLhxZ1NCD1dAZKHQq1fg==}
+    peerDependencies:
+      vue: ^3.0.0
+
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
 
@@ -2537,6 +2603,14 @@ packages:
   slidev-theme-academic@2.1.0:
     resolution: {integrity: sha512-C1pbu9+6mv01ZMX+HJnagO10ZqDpd3yNthWOmEviKRytjs0K9Vsue+30W9fmB72wxbVpfGpRFRWU94WFzEJDIw==}
     engines: {node: '>=18.0.0', slidev: '>=0.47.0'}
+
+  slidev-theme-geist@0.8.1:
+    resolution: {integrity: sha512-2DET+H1tvaFQyKYimg+4RlShLLnyOdW40GFfOH8kAJbsI1JOwzDiLv1UjyFO11y9O0/074/YIwArz9xg4Zde5A==}
+    engines: {node: '>=14', slidev: '>=0.20'}
+
+  slidev-theme-neversink@0.4.0:
+    resolution: {integrity: sha512-j7QRMf0BcuiZlN7G6blAtDcoWgB7Wu5G92OAciu2aRxYrXCkYwW9ys810fABE4dYcx+tEZT2u0+2QhdJ6C4hvA==}
+    engines: {node: '>=18.0.0', slidev: '>=52.1.0'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -3170,6 +3244,8 @@ snapshots:
 
   '@braintree/sanitize-url@7.1.1': {}
 
+  '@catppuccin/palette@1.7.1': {}
+
   '@chevrotain/cst-dts-gen@11.0.3':
     dependencies:
       '@chevrotain/gast': 11.0.3
@@ -3353,6 +3429,14 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/logos@1.2.10':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/mdi@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/ph@1.2.2':
     dependencies:
       '@iconify/types': 2.0.0
@@ -3360,6 +3444,19 @@ snapshots:
   '@iconify-json/svg-spinners@1.2.4':
     dependencies:
       '@iconify/types': 2.0.0
+
+  '@iconify-json/twemoji@1.2.5':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/uim@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify/json@2.2.425':
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 2.0.3
 
   '@iconify/types@2.0.0': {}
 
@@ -3382,6 +3479,11 @@ snapshots:
       '@iconify/types': 2.0.0
       mlly: 1.8.0
 
+  '@iconify/vue@4.3.0(vue@3.5.26(typescript@5.9.3))':
+    dependencies:
+      '@iconify/types': 2.0.0
+      vue: 3.5.26(typescript@5.9.3)
+
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -3400,6 +3502,11 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@ktym4a/slidev-theme-ktym4a@0.3.2(@slidev/types@52.11.1(@nuxt/kit@3.20.2)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2)))':
+    dependencies:
+      '@catppuccin/palette': 1.7.1
+      '@slidev/types': 52.11.1(@nuxt/kit@3.20.2)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
 
   '@leichtgewicht/ip-codec@2.0.5': {}
 
@@ -3423,6 +3530,12 @@ snapshots:
       markdown-it: 14.1.0
 
   '@mdit-vue/types@3.0.2': {}
+
+  '@mdit/plugin-sub@0.12.0(markdown-it@14.1.0)':
+    dependencies:
+      '@types/markdown-it': 14.1.2
+    optionalDependencies:
+      markdown-it: 14.1.0
 
   '@mermaid-js/parser@0.6.3':
     dependencies:
@@ -3820,6 +3933,12 @@ snapshots:
     dependencies:
       roughjs: 4.6.6
 
+  '@slidev/theme-apple-basic@0.25.1':
+    dependencies:
+      '@slidev/types': 0.47.5
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
+
   '@slidev/theme-default@0.25.0':
     dependencies:
       '@slidev/types': 0.47.5
@@ -3831,6 +3950,8 @@ snapshots:
       '@slidev/types': 0.47.5
       codemirror-theme-vars: 0.1.2
       prism-theme-vars: 0.2.5
+
+  '@slidev/types@0.28.10': {}
 
   '@slidev/types@0.29.2': {}
 
@@ -5363,6 +5484,8 @@ snapshots:
 
   markdown-it-footnote@4.0.0: {}
 
+  markdown-it-mark@4.0.0: {}
+
   markdown-it-mdc@0.2.6(@types/markdown-it@14.1.2)(markdown-it@14.1.0):
     dependencies:
       '@types/markdown-it': 14.1.2
@@ -5848,6 +5971,10 @@ snapshots:
 
   punycode.js@2.3.1: {}
 
+  qrcode.vue@3.6.0(vue@3.5.26(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.26(typescript@5.9.3)
+
   quansync@0.2.11: {}
 
   quansync@1.0.0: {}
@@ -6013,6 +6140,41 @@ snapshots:
       - rollup
       - supports-color
       - vite
+
+  slidev-theme-geist@0.8.1:
+    dependencies:
+      '@slidev/types': 0.28.10
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
+
+  slidev-theme-neversink@0.4.0(@nuxt/kit@3.20.2)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(markdown-it@14.1.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3)):
+    dependencies:
+      '@iconify-json/logos': 1.2.10
+      '@iconify-json/mdi': 1.2.3
+      '@iconify-json/twemoji': 1.2.5
+      '@iconify-json/uim': 1.2.3
+      '@iconify/json': 2.2.425
+      '@iconify/vue': 4.3.0(vue@3.5.26(typescript@5.9.3))
+      '@mdit/plugin-sub': 0.12.0(markdown-it@14.1.0)
+      '@slidev/types': 52.11.1(@nuxt/kit@3.20.2)(@vue/compiler-sfc@3.5.26)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
+      markdown-it-mark: 4.0.0
+      qrcode.vue: 3.6.0(vue@3.5.26(typescript@5.9.3))
+    transitivePeerDependencies:
+      - '@nuxt/kit'
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - markdown-it
+      - markdown-it-async
+      - postcss
+      - supports-color
+      - svelte
+      - typescript
+      - vite
+      - vue
+      - vue-template-compiler
+      - vue-template-es2015-compiler
 
   source-map-js@1.2.1: {}
 
